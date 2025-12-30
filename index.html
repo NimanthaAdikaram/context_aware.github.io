@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Context-Aware Particle Filtering and Risk-Aware Planning for Safe Navigation and Smooth Human-Robot Interaction in Dynamic Environments">
+  <meta name="keywords" content="Particle Filter, Navigation, Human-Robot Interaction, Risk-Aware Planning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>Context-Aware Particle Filtering and Risk-Aware Planning for Safe Navigation and Smooth Human-Robot Interaction in Dynamic Environments</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>-->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -258,31 +258,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Human-robot interaction (HRI) navigation in crowded indoor spaces must be both safe and comfortable. However, much of the existing literature relies on fixed-uncertainty tracking and standard resampling rules, which often become overconfident, suffer particle impoverishment, and recover poorly under missed detections and occlusions exactly when human behavior is most non-stationary and multi-modal. This paper addresses this gap by developing a belief-aware HRI pipeline whose objective is to maintain realistic human-state uncertainty and propagate it into safer, smoother navigation. We propose a context-aware particle filter (CA-PF) that adapts motion uncertainty online using interaction distance, robot motion, visibility, and observation reliability, together with a context-aware resampling strategy that adjusts resampling behavior using ESS, occlusion status, and risk level to preserve diversity during ambiguity. Experiments demonstrate improved robustness under occlusion and superior hypothesis retention. The framework achieves a 12.7\% reduction in resampling operations and a 5.1\% improvement in motion smoothness (RMS acceleration), confirming that context-conditioned filtering enables socially compliant, efficient navigation in real-world deployments.
           </p>
         </div>
       </div>
